@@ -4,69 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <style>
-      body{
-        
-        background-image: url(/img/360_F_200686969_GJ7zbz2qaNIE4dyHSbZkQXvNPzRuwlr3.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 100vh;
-        margin: 0;
-      
-      }
-      .popup {
-        position: fixed;
-        display: none;
-        width: 500px;
-        background-color: black;
-        color: gray;
-        text-align: center;
-        border-radius: 6px;
-        padding: 8px 0;
-        font-size: 2.3rem;
-        z-index: 1;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-      }
-    
-      .popup .popuptext {
-          padding: 8px 16px;
-      }
-
-      #popupButton{
-        position: absolute;
-        left: 50%;
-        top: 5%;
-        transform: translate(-50%, -50%);
-        height: 40px;
-        width: 100px;
-        background-color: gray;
-        border: none;
-        border-radius: 10px;
-      }
-    </style>
+    <title>WEBSITE PORTFOLIO</title>
   </head>
   <body>
-    <div>
-      <div id="root">
-        <button id="popupButton">Click me</button>
-      <div id="popup" class="popup">
-        <span class="popuptext" id="popupText">Earl Clarence De Mesa Borgonia</span>
-      </div>
-      
-    </div>
-    <script>
-      document.getElementById('popupButton').addEventListener('click', function() {
-        var popup = document.getElementById('popup');
-        if (popup.style.display === 'none' || popup.style.display === '') {
-            popup.style.display = 'block';
-        } else {
-            popup.style.display = 'none';
-        }
-    });
-    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
